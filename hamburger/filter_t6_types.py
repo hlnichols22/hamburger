@@ -171,9 +171,9 @@ def align_sequences(fasta_file, output_file): # cat tssB/tssC sequences in refer
     subprocess.run(
         args = [
         "muscle",
-        "-in",
+        "-align",
         fasta_file,
-        "-out",
+        "-output",
         output_file,
         "-quiet"
         ],
